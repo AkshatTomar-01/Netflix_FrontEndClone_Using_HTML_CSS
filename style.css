@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Martel Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(assets/imgs/bg_img.jpg);
+  height: 644px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  position: relative;
+}
+
+.main .box {
+  height: 644px;
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 75vw;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 62px;
+}
+
+nav img {
+  color: rgb(229 9 20);
+  width: 150px;
+  position: relative;
+  z-index: 10;
+  padding-top: 25px;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+  padding-top: 25px;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-family: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-family: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.separation {
+  height: 9px;
+  background-color: rgb(35, 35, 35);
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.7);
+  border-radius: 4px;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 5px 15px 5px 17px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.main input {
+  padding: 10px 170px 10px 14px;
+  font-size: 15px;
+  color: white;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.7);
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 80vw;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 500px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+}
+
+section.first > div :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 560px;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 80px;
+}
+
+.secImg video {
+  position: absolute;
+  top: 75px;
+  right: 0;
+}
+
+.faq h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    padding-top: 20px;
+}
+
+.faq{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 34px;
+}
+
+.faqbox:hover{
+    background-color: #414141;
+}
+
+.faqbox{
+    transition: all 0.5s ease-out;
+    display: flex;
+    background-color: rgb(35, 35, 35);
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 75vw;
+    margin: 12px auto;
+    cursor: pointer;
+
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+footer .questions{
+    padding: 34px 0;
+}
+
+.footer a{
+    color: white;
+    font-size: 14px;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
